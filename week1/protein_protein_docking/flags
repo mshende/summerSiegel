@@ -1,7 +1,7 @@
 -s pro_pro_1bvk.pdb
 -dock_pert 3 8
 -spin
--run:debug
+#-run:debug
 -no_filters
 -mute core.util.prof ## dont show timing info
 -out:overwrite
