@@ -1,0 +1,2 @@
+$ROSETTA_BIN/InterfaceAnalyzer.default.linuxgccrelease -s pro_pro_1bvk_0003.pdb -fixedchains A B @pack_input_options.txt -score:weights talaris2013.wts -database $ROSETTA_DB
+

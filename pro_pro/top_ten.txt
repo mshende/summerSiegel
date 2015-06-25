@@ -1,0 +1,10 @@
+pro_pro_1bvk_0053.pdb
+pro_pro_1bvk_0070.pdb
+pro_pro_1bvk_0010.pdb
+pro_pro_1bvk_0038.pdb
+pro_pro_1bvk_0027.pdb
+pro_pro_1bvk_0047.pdb
+pro_pro_1bvk_0037.pdb
+pro_pro_1bvk_0079.pdb
+pro_pro_1bvk_0099.pdb
+pro_pro_1bvk_0032.pdb
