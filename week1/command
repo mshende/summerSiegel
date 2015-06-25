@@ -1,0 +1,2 @@
+~/Rosetta/Rosetta/main/source/bin/rosetta_scripts.default.linuxgccrelease @flags -database ~/Rosetta/Rosetta/main/database/ -show_simulation_in_pymol 3 -keep_pymol_simulation_history T
+

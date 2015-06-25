@@ -1,0 +1,11 @@
+#!/bin/bash
+#$ -S /bin/bash
+#$ -N pro_ligand
+#$ -cwd
+#$ -e log.pro.ligand
+#$ -o log.pro.ligand
+#$ -l h_vmem=4G
+#$ -v ROSETTA_BIN
+#$ -v ROSETTA_DB
+
+$ROSETTA_BIN/rosetta_scripts.linuxgccrelease -database $ROSETTA_DB @flags 
