@@ -1,0 +1,1 @@
+~/Rosetta/Rosetta/main/source/bin/docking_protocol.linuxgccrelease -database ~/Rosetta/Rosetta/main/database/ @flags -show_simulation_in_pymol 3 -keep_pymol_simulation_history T

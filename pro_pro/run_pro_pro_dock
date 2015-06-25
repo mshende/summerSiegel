@@ -1,0 +1,12 @@
+#!/bin/bash
+#$ -S /bin/bash
+#$ -N pro_pro
+#$ -cwd
+#$ -e log.pro.pro
+#$ -o log.pro.pro
+#$ -l h_vmem=4G
+#$ -v ROSETTA_BIN
+#$ -v ROSETTA_DB
+##$ -tc 100
+
+$ROSETTA_BIN/docking_protocol.linuxgccrelease -database $ROSETTA_DB @flags 
