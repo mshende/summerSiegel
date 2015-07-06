@@ -1,0 +1,2 @@
+~/Rosetta/Rosetta/main/source/bin/rosetta_scripts.default.linuxgccrelease @pro_lig_dock_flags -in:file:extra_res_fa GTX1.fa.params -database ~/Rosetta/Rosetta/main/database/ -show_simulation_in_pymol 3 -keep_pymol_simulation_history T
+
