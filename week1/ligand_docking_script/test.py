@@ -29,10 +29,13 @@ def get_num_ligand_chains(fname):
 # in the flag when running docking
 def get_params_file_string(chains, ligand_name):
     params_file_string = ""
-    for index in range (chains):
-        params_file_string += '%s%i.fa.params' %(ligand_name, index+1)
-        if index != chains-1:
-            params_file_string += ' '
+    if chains == 1:
+        params_file_string = '%s.fa.params' %(ligand_name)
+    else:
+        for index in range (chains):
+            params_file_string += '%s%i.fa.params' %(ligand_name, index+1)
+            if index != chains-1:
+                params_file_string += ' '
     return params_file_string
 
 def main():
@@ -83,7 +86,8 @@ def main():
         #run 'dock_command'
 
         #NOTE: how do I determine how many params files were produced and use all of them in the flag?
-        dock_command = '~/Rosetta/Rosetta/main/source/bin/rosetta_scripts.default.linuxgccrelease @pro_lig_dock_flags -in:file:s %s -in:file:extra_res_fa %s -database ~/Rosetta/Rosetta/main/database/ -show_simulation_in_pymol 3 -keep_pymol_simulation_history T' % (prep_pdb_file, params_file)
+        dock_command = '~/Rosetta/Rosetta/main/source/bin/rosetta_scripts.default.linuxgccrelease @pro_lig_dock_flags -in:file:s %s -in:file:extra_res_fa %s -parser:script_vars nativeName=%s -database ~/Rosetta/Rosetta/main/database/ -show_simulation_in_pymol 3 -keep_pymol_simulation_history T' % (prep_pdb_file, params_file, prep_pdb_file)
+        os.system(dock_command)
 
 
 if __name__=="__main__":
